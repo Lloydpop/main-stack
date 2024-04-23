@@ -9,7 +9,7 @@ export const Heading = ({ children, size = "30" }: HeadingProps) => {
       style={{
         fontSize: `${size}px`,
       }}
-      className="font-[700] tracking-wide"
+      className="font-[DegularBold] tracking-tight"
     >
       {children}
     </h1>
