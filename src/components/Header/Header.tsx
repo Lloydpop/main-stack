@@ -95,7 +95,6 @@ export const Header = ({ children }: HeaderProps) => {
                 setActive(i);
                 setOpen(false);
               }}
-              key={i}
               variant={
                 menu.variant !== "primary" && active === i
                   ? "outline"
