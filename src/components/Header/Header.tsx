@@ -4,24 +4,34 @@ import { headerMenu } from "./components/MenuItems";
 import menuIcon from "@/assets/images/menuIcon.png";
 import { useQuery } from "@tanstack/react-query";
 import { transactionService } from "@/service/api.service";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-
-export const Header = () => {
+interface HeaderProps {
+  children: ReactNode;
+}
+export const Header = ({ children }: HeaderProps) => {
   const { data: user } = useQuery({
     queryKey: ["user"],
     queryFn: () => transactionService.getUser(),
   });
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<number | null>(null);
   return (
-    <div>
-      <header className=" shadow-md rounded-[100px]  bg-[#fff]  px-8 py-6 min-h-[64px] flex justify-between items-center">
+    <div className="h-[100vh] overflow-y-auto lg:px-6">
+      <header className=" shadow-md rounded-[100px] sticky top-0 z-[99] m-auto   bg-[#fff]  px-8 py-4  flex justify-between items-center">
         <Logo size="36" />
         <nav className="lg:flex hidden items-center gap-5 capitalize">
           {headerMenu?.menu_one.map((menu, i) => (
             <Button
+              onClick={() => {
+                setActive(i);
+              }}
               key={i}
-              variant={menu.variant}
+              variant={
+                menu.variant !== "primary" && active === i
+                  ? "outline"
+                  : menu.variant
+              }
               leftIcon={
                 <img
                   src={menu.icon}
@@ -64,7 +74,7 @@ export const Header = () => {
         </ul>
       </header>
       <div
-        className={`border lg:hidden block p-6 fixed top-0 w-[250px] duration-[0.8s] ease-in-out bg-white h-full z-[100] ${
+        className={`border lg:hidden block p-6 fixed top-0 w-[250px] duration-[0.8s] bg-white h-full z-[100] ${
           open ? "left-0" : "-left-[100%]"
         }`}
       >
@@ -82,9 +92,15 @@ export const Header = () => {
             <Button
               key={i}
               onClick={() => {
+                setActive(i);
                 setOpen(false);
               }}
-              variant={menu.variant}
+              key={i}
+              variant={
+                menu.variant !== "primary" && active === i
+                  ? "outline"
+                  : menu.variant
+              }
               leftIcon={
                 <img
                   src={menu.icon}
@@ -98,6 +114,7 @@ export const Header = () => {
           ))}
         </nav>
       </div>
+      {children}
     </div>
   );
 };

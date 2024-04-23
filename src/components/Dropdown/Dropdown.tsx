@@ -79,7 +79,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
         </span>
       </button>
       {isOpen && (
-        <ul className="w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
+        <ul className="w-full mt-1 bg-white absolute  z-[1000] border border-gray-300 rounded-md shadow-lg">
           {options.map((option) => (
             <li
               key={option.value}

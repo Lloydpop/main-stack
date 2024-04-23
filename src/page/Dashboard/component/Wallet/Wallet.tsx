@@ -11,11 +11,11 @@ interface WalletProps {
 }
 export const Wallet = ({ data, transactions }: WalletProps) => {
   return (
-    <div className="grid grid-cols-12 lg:gap-10">
-      <div className="lg:col-span-9 col-span-12">
+    <div className="grid grid-cols-12 lg:gap-16">
+      <div className="lg:col-span-8 col-span-12">
         <Analytics data={transactions} balance={data?.ledger_balance} />
       </div>
-      <div className="lg:col-span-3 col-span-12 lg:mt-0 mt-6">
+      <div className="lg:col-span-4 col-span-12 lg:mt-0 mt-6">
         <AvailableBal data={data} />
       </div>
     </div>
