@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/fonnts.com-DegularDemo-Regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/fonnts.com-DegularDemo-Regular.woff") format("woff");
+}
+body {
+  font-family: Degular, sans-serif;
+  overflow-x: hidden;
+}

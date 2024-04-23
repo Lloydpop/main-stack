@@ -1,4 +1,5 @@
 # main-stack
+
 This is a simple test app that displays user information, a list of transactions performed, a list of balance in wallet (like ledger balance), and filters to help filter transactions.
 
 ## Features
