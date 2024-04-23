@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders button with left and right icons correctly 1`] = `
+<div>
+  <button
+    class="  rounded-[100px] block font-[600] border py-3 px-4 text-sm items-center shadow-sm
+       
+          disabled:cursor-not-allowed bg-primary text-white disabled:opacity-50"
+    type="button"
+  >
+    <span
+      class="flex items-center justify-center gap-3"
+    >
+      <i
+        class="fa fa-left"
+      />
+      Button with Icons
+      <i
+        class="fa fa-right"
+      />
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with left icon correctly 1`] = `
+<div>
+  <button
+    class="  rounded-[100px] block font-[600] border py-3 px-4 text-sm items-center shadow-sm
+       
+          disabled:cursor-not-allowed bg-primary text-white disabled:opacity-50"
+    type="button"
+  >
+    <span
+      class="flex items-center justify-center gap-3"
+    >
+      <i
+        class="fa fa-left"
+      />
+      Button with left icon
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with right icon correctly 1`] = `
+<div>
+  <button
+    class="  rounded-[100px] block font-[600] border py-3 px-4 text-sm items-center shadow-sm
+       
+          disabled:cursor-not-allowed bg-primary text-white disabled:opacity-50"
+    type="button"
+  >
+    <span
+      class="flex items-center justify-center gap-3"
+    >
+      <i
+        class="fa fa-left"
+      />
+      Button with right icon
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component renders disabled button correctly 1`] = `
+<div>
+  <button
+    class="  rounded-[100px] block font-[600] border py-3 px-4 text-sm items-center shadow-sm
+       
+          disabled:cursor-not-allowed bg-primary text-white disabled:opacity-50"
+    disabled=""
+    type="button"
+  >
+    <span
+      style="width: 25px; height: 25px; border-radius: 100%; border: 2px solid; border-top-color: #000; border-bottom-color: transparent; border-left-color: #000; border-right-color: #000; display: inline-block; animation: react-spinners-ClipLoader-clip 0.75s 0s infinite linear; animation-fill-mode: both;"
+    />
+  </button>
+</div>
+`;
+
+exports[`Button component renders primary button correctly 1`] = `
+<div>
+  <button
+    class="  rounded-[100px] block font-[600] border py-3 px-4 text-sm items-center shadow-sm
+       
+          disabled:cursor-not-allowed bg-primary text-white disabled:opacity-50"
+    type="button"
+  >
+    <span
+      class="flex items-center justify-center gap-3"
+    >
+      Click me
+    </span>
+  </button>
+</div>
+`;

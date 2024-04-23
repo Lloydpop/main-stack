@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyState component renders correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col justify-center  min-h-[400px] lg:w-[369px] w-[250px] gap-4 m-auto"
+  >
+    <div
+      class="bg-gradient-to-b from-gray-200 via-gray-300 to-gray-50 h-[48px] w-[48px] rounded-full flex items-center justify-center"
+    >
+      <img
+        alt="receipt icon"
+        class="w-5 h-5 object-contain"
+        src="default"
+      />
+    </div>
+    <h1
+      class="font-[DegularBold] tracking-tight"
+      style="font-size: 28px;"
+    >
+      Empty State Title
+    </h1>
+    <p>
+      This is a description
+    </p>
+    <div>
+      <button
+        class="  rounded-[100px] block font-[600] border py-3 px-4 text-sm items-center shadow-sm
+       
+          disabled:cursor-not-allowed bg-[#EFF1F6] hover:bg-gray-50 !border-0 !px-4 font-semibold"
+        type="button"
+      >
+        <span
+          class="flex items-center justify-center gap-3"
+        >
+          Action
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

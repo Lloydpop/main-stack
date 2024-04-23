@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicDateRangePicker component renders correctly 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <input
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      class="bg-[#EFF1F6] rounded-md py-2 px-4 w-full block font-[500]"
+      value=""
+    />
+  </div>
+</div>
+`;

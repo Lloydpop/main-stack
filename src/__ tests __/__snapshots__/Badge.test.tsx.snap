@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Badge component with status "successful" correctly 1`] = `
+<div>
+  <p
+    class="font-[500] disabled:cursor-not-allowed capitalize text-[14px] text-[#0EA163]"
+  >
+    Successful Badge
+  </p>
+</div>
+`;

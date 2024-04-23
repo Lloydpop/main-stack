@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component renders Avatar component correctly 1`] = `
+<div>
+  <div
+    class="bg-gradient-to-r from-gray-700 via-gray-600 to-gray-900  w-[32px] h-[32px] rounded-full text-white uppercase flex justify-center items-center"
+  >
+    <span
+      class="initials"
+    >
+      JD
+    </span>
+  </div>
+</div>
+`;
