@@ -1,11 +1,11 @@
-import { Button, Heading } from "../../../../components";
-import exportIcon from "../../../../assets/images/exportIcon.png";
-import expandIcon from "../../../../assets/images/expandIcon.png";
+import { Button, Heading } from "@/components";
+import exportIcon from "@/assets/images/exportIcon.png";
+import expandIcon from "@/assets/images/expandIcon.png";
 import { RenderData } from "./components/RenderData";
 import { useMutation } from "@tanstack/react-query";
-import { useConvertFileToJson } from "../../../../hooks/useConvertFileToJson";
-import { transactionService } from "../../../../service/api.service";
-import { formatDateToTextFormat } from "../../../../utils";
+import { useConvertFileToJson } from "@/hooks/useConvertFileToJson";
+import { transactionService } from "@/service/api.service";
+import { formatDateToTextFormat } from "@/utils";
 export interface TransactionsPops {
   data: {
     metadata: { product_name: string; name: string };

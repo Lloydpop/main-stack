@@ -1,6 +1,6 @@
-import { Heading } from "../../../../components";
-import { formatAsUSD } from "../../../../utils";
-import infoIcon from "../../../../assets/images/infoIcon.png";
+import { Heading } from "@/components";
+import { formatAsUSD } from "@/utils";
+import infoIcon from "@/assets/images/infoIcon.png";
 interface AvailableBalanceProps {
   data: {
     ledger_balance: string;

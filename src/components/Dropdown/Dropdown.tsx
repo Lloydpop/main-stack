@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import expandIcon from "../../assets/images/expandIcon.png";
+import expandIcon from "@/assets/images/expandIcon.png";
 import { CheckIcon } from "@heroicons/react/24/outline";
 
 interface Option {

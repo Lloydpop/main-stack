@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 import { Header } from "../Header/Header";
-import productOne from "../../assets/images/product1.png";
-import productTwo from "../../assets/images/product2.png";
-import productThree from "../../assets/images/product3.png";
-import productFour from "../../assets/images/product4.png";
+import productOne from "@/assets/images/product1.png";
+import productTwo from "@/assets/images/product2.png";
+import productThree from "@/assets/images/product3.png";
+import productFour from "@/assets/images/product4.png";
 
 interface WrapperProps {
   children: ReactNode;
