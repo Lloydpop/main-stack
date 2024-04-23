@@ -1,6 +1,6 @@
-import { Button, Heading } from "../../../../components";
-import { LineChartComponent } from "../../../../components/Chart/Chart";
-import { formatAsUSD } from "../../../../utils";
+import { Button, Heading } from "@/components";
+import { LineChartComponent } from "@/components/Chart/Chart";
+import { formatAsUSD } from "@/utils";
 
 interface AnalyticsProps {
   balance: string;

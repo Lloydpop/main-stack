@@ -1,10 +1,10 @@
-import homeIcon from "../../../assets/images/homeIcon.png";
-import chartIcon from "../../../assets/images/chartIcon.png";
-import moneyIcon from "../../../assets/images/moneyIcon.png";
-import groupIcon from "../../../assets/images/groupIcon.png";
-import widgetIcon from "../../../assets/images/widgetIcon.png";
-import notificationIcon from "../../../assets/images/notificationIcon.png";
-import chatIcon from "../../../assets/images/chatIcon.png";
+import homeIcon from "@/assets/images/homeIcon.png";
+import chartIcon from "@/assets/images/chartIcon.png";
+import moneyIcon from "@/assets/images/moneyIcon.png";
+import groupIcon from "@/assets/images/groupIcon.png";
+import widgetIcon from "@/assets/images/widgetIcon.png";
+import notificationIcon from "@/assets/images/notificationIcon.png";
+import chatIcon from "@/assets/images/chatIcon.png";
 export const headerMenu = {
   menu_one: [
     { label: "Home", icon: homeIcon, variant: "transparent" },

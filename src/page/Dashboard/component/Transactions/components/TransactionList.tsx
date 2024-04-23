@@ -1,7 +1,7 @@
-import { Badge, Heading } from "../../../../../components";
-import arrowUp from "../../../../../assets/images/arrowupIcon.png";
-import arrowDown from "../../../../../assets/images/arrowdownIcon.png";
-import { formatAsUSD, formatDateToTextFormat } from "../../../../../utils";
+import { Badge, Heading } from "@/components";
+import arrowUp from "@/assets/images/arrowupIcon.png";
+import arrowDown from "@/assets/images/arrowdownIcon.png";
+import { formatAsUSD, formatDateToTextFormat } from "@/utils";
 export interface TransactionListProps {
   data: {
     metadata: { product_name: string; name: string };

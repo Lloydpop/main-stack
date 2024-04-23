@@ -1,9 +1,9 @@
 import { Logo } from "../Logo/Logo";
 import { Avatar, Button } from "..";
 import { headerMenu } from "./components/MenuItems";
-import menuIcon from "../../assets/images/menuIcon.png";
+import menuIcon from "@/assets/images/menuIcon.png";
 import { useQuery } from "@tanstack/react-query";
-import { transactionService } from "../../service/api.service";
+import { transactionService } from "@/service/api.service";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
